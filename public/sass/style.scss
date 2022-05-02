@@ -1,62 +1,74 @@
+$screen_background: #141519;
+$ratingBox_backbround: #1f2630;
+$circleIcon_background: #262f38;
+$button_background: #fc7613;
+
+@mixin circle($radius) {
+  background-color: $circleIcon_background;
+  border-radius: $radius;
+}
 
 html {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    background-color: rgb(25, 25, 27);
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(245, 245, 245, 0.801);
+  background-color: $screen_background;
 }
 
 #ratingBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: auto;
+  padding: 1.25rem;
+
+  background-color: $ratingBox_backbround;
+  border-radius: 1rem;
+  max-width: 40vh;
+
+  svg {
+    @include circle(4rem);
+    padding: 0.75rem;
+    overflow: visible;
+  }
+
+  #ratingBox_heading {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: white;
+  }
+
+  #ratingBox_paragrpah {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+  }
+
+  #ratingBox_ratings {
+      margin-top: 2rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    margin: auto;
-    padding: 1.25rem;
-
-    background-color: rgb(34, 34, 41);
-    border-radius: 1rem;
-    max-width: 50vh;
-
-    svg{
-        background-color: rgb(54, 54, 179);
-        border-radius: 4rem;
-        overflow: visible;
-        padding: .75rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .ratingBox_ratings_numbers {
+      @include circle(50%);
+      text-align: center;
+      line-height: 3.5rem;
+      margin: .5rem;
+      width: 3.5rem;
+      height: 3.5rem;
     }
+  }
 
-    #ratingBox_heading{
-        font-size: 1.5rem;
-        margin-top: 1.5rem;
-    }
+  #ratingBox_submitRating {
+    border-radius: 2rem;
+    height: 2.5rem;
+    margin-top: 2rem;
 
-    #ratingBox_paragrpah{
-        font-size: 1rem;
-        margin-top: 1rem;
-        line-height: 1.5rem;
-    }
+    color: white;
+    background-color: $button_background;
 
-    #ratingBox_ratings{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-       .ratingBox_ratings_numbers {
-        background-color: rgb(54, 54, 179);
-        border-radius: 50%;
-        padding: 1rem;
-       }
-
-    }
-
-    #ratingBox_submitRating {
-        border-radius: 2rem;
-        height: 2.5rem;
-        margin-top: .75rem;
-
-        color: white;
-        background-color: orange;
-
-        letter-spacing: .25rem;
-        text-transform: uppercase;
-    }
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+  }
 }

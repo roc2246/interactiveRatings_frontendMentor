@@ -1,8 +1,8 @@
 html {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  background-color: #19191b; }
+  color: rgba(245, 245, 245, 0.801);
+  background-color: #141519; }
 
 #ratingBox {
   display: flex;
@@ -10,34 +10,40 @@ html {
   justify-content: center;
   margin: auto;
   padding: 1.25rem;
-  background-color: #222229;
+  background-color: #1f2630;
   border-radius: 1rem;
-  max-width: 50vh; }
+  max-width: 40vh; }
   #ratingBox svg {
-    background-color: #3636b3;
+    background-color: #262f38;
     border-radius: 4rem;
-    overflow: visible;
-    padding: .75rem; }
+    padding: 0.75rem;
+    overflow: visible; }
   #ratingBox #ratingBox_heading {
     font-size: 1.5rem;
-    margin-top: 1.5rem; }
+    margin-top: 1.5rem;
+    color: white; }
   #ratingBox #ratingBox_paragrpah {
     font-size: 1rem;
     margin-top: 1rem;
     line-height: 1.5rem; }
   #ratingBox #ratingBox_ratings {
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; }
     #ratingBox #ratingBox_ratings .ratingBox_ratings_numbers {
-      background-color: #3636b3;
+      background-color: #262f38;
       border-radius: 50%;
-      padding: 1rem; }
+      text-align: center;
+      line-height: 3.5rem;
+      margin: .5rem;
+      width: 3.5rem;
+      height: 3.5rem; }
   #ratingBox #ratingBox_submitRating {
     border-radius: 2rem;
     height: 2.5rem;
-    margin-top: .75rem;
+    margin-top: 2rem;
     color: white;
-    background-color: orange;
-    letter-spacing: .25rem;
+    background-color: #fc7613;
+    letter-spacing: 0.25rem;
     text-transform: uppercase; }
