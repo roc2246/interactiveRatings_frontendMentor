@@ -34,6 +34,7 @@ html {
     #ratingBox #ratingBox_ratings .ratingBox_ratings_numbers {
       background-color: #262f38;
       border-radius: 50%;
+      cursor: pointer;
       text-align: center;
       line-height: 3.5rem;
       margin: 0.5rem;
@@ -44,8 +45,10 @@ html {
       #ratingBox #ratingBox_ratings .ratingBox_ratings_numbers:active {
         background-color: #fc7613; }
   #ratingBox #ratingBox_submitRating {
+    cursor: pointer;
     border-radius: 2rem;
     height: 2.5rem;
+    width: 23.25rem;
     margin-top: 2rem;
     color: white;
     background-color: #fc7613;

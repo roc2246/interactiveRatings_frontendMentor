@@ -12,50 +12,53 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./public/css/style.css" />
-    <script src="script.js"></script>
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
     <div id="ratingBox">
       <!-- Rating state start -->
-      <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
-          fill="#FC7614"
-        />
-      </svg>
-      <h1 id="ratingBox_heading">How did we do?</h1>
+      <div id="ratingState">
+        <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+            fill="#FC7614"
+          />
+        </svg>
+        <h1 id="ratingBox_heading">How did we do?</h1>
 
-      <p id="ratingBox_paragrpah">
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
+        <p id="ratingBox_paragrpah">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
 
-      <div id="ratingBox_ratings">
-        <span class="ratingBox_ratings_numbers">1</span>
-        <span class="ratingBox_ratings_numbers">2</span>
-        <span class="ratingBox_ratings_numbers">3</span>
-        <span class="ratingBox_ratings_numbers">4</span>
-        <span class="ratingBox_ratings_numbers">5</span>
+        <div id="ratingBox_ratings">
+          <span class="ratingBox_ratings_numbers">1</span>
+          <span class="ratingBox_ratings_numbers">2</span>
+          <span class="ratingBox_ratings_numbers">3</span>
+          <span class="ratingBox_ratings_numbers">4</span>
+          <span class="ratingBox_ratings_numbers">5</span>
+        </div>
+        <button id="ratingBox_submitRating" onclick="submitRating()">Submit</button>
       </div>
-      <button id="ratingBox_submitRating">Submit</button>
 
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
 
-      <h4 id="ratingBox_confrimMssg">
-        You selected
-        <!-- Add rating here -->
-        <span id="ratingBox_confrimMssg_chosenRating"></span>
-        out of 5
-      </h4>
+      <div id="thankYouState">
+        <h4 id="ratingBox_confrimMssg">
+          You selected
+          <span id="chosenRating"></span>
+          <span id="ratingBox_confrimMssg_chosenRating"></span>
+          out of 5
+        </h4>
 
-      <h1 id="ratingBox_heading--thankYouState">Thank you!</h1>
-      <p id="ratingBox_paragraph--thankYouState">
-        We appreciate you taking the time to give a rating. If you ever need
-        more support, don’t hesitate to get in touch!
-      </p>
+        <h1 id="ratingBox_heading--thankYouState">Thank you!</h1>
+        <p id="ratingBox_paragraph--thankYouState">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
 
       <!-- Thank you state end -->
     </div>
@@ -66,5 +69,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="./public/js/script.js"></script>
   </body>
 </html>
