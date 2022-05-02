@@ -12,26 +12,27 @@ html {
   padding: 1.25rem;
   background-color: #1f2630;
   border-radius: 1rem;
-  max-width: 40vh; }
-  #ratingBox svg {
+  max-width: 80vw;
+  max-height: 100vh; }
+  #ratingBox #ratingState svg {
     background-color: #262f38;
     border-radius: 4rem;
     padding: 0.75rem;
     overflow: visible; }
-  #ratingBox #ratingBox_heading {
+  #ratingBox #ratingState #ratingBox_heading {
     font-size: 1.5rem;
     margin-top: 1.5rem;
     color: white; }
-  #ratingBox #ratingBox_paragrpah {
+  #ratingBox #ratingState #ratingBox_paragrpah {
     font-size: 1rem;
     margin-top: 1rem;
     line-height: 1.5rem; }
-  #ratingBox #ratingBox_ratings {
+  #ratingBox #ratingState #ratingBox_ratings {
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; }
-    #ratingBox #ratingBox_ratings .ratingBox_ratings_numbers {
+    #ratingBox #ratingState #ratingBox_ratings .ratingBox_ratings_numbers {
       background-color: #262f38;
       border-radius: 50%;
       cursor: pointer;
@@ -40,11 +41,11 @@ html {
       margin: 0.5rem;
       width: 3.5rem;
       height: 3.5rem; }
-      #ratingBox #ratingBox_ratings .ratingBox_ratings_numbers:hover {
+      #ratingBox #ratingState #ratingBox_ratings .ratingBox_ratings_numbers:hover {
         background-color: #7c8798; }
-      #ratingBox #ratingBox_ratings .ratingBox_ratings_numbers:active {
+      #ratingBox #ratingState #ratingBox_ratings .ratingBox_ratings_numbers:active {
         background-color: #fc7613; }
-  #ratingBox #ratingBox_submitRating {
+  #ratingBox #ratingState #ratingBox_submitRating {
     cursor: pointer;
     border-radius: 2rem;
     height: 2.5rem;
@@ -54,9 +55,33 @@ html {
     background-color: #fc7613;
     letter-spacing: 0.25rem;
     text-transform: uppercase; }
-    #ratingBox #ratingBox_submitRating:active {
+    #ratingBox #ratingState #ratingBox_submitRating:active {
       color: #fc7613;
       background-color: white; }
+  #ratingBox #thankYouState svg {
+    overflow: visible;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  #ratingBox #thankYouState #ratingBox_confrimMssg {
+    background-color: #262f38;
+    border-radius: 2rem;
+    color: #fc7613;
+    padding: 0.5rem;
+    text-align: center;
+    width: 12rem;
+    margin-left: auto;
+    margin-right: auto; }
+  #ratingBox #thankYouState #ratingBox_heading--thankYouState {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    color: white; }
+  #ratingBox #thankYouState #ratingBox_paragraph--thankYouState {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    text-align: center; }
 
 .attribution {
   margin-top: 2rem;

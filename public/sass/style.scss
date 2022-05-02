@@ -28,65 +28,101 @@ html {
 
   background-color: $ratingBox_backbround;
   border-radius: 1rem;
-  max-width: 40vh;
+  max-width: 80vw;
+  max-height: 100vh;
 
-  svg {
-    @include circle(4rem);
-    padding: 0.75rem;
-    overflow: visible;
-  }
+  #ratingState {
+    svg {
+      @include circle(4rem);
+      padding: 0.75rem;
+      overflow: visible;
+    }
 
-  #ratingBox_heading {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    color: white;
-  }
+    #ratingBox_heading {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      color: white;
+    }
 
-  #ratingBox_paragrpah {
-    font-size: 1rem;
-    margin-top: 1rem;
-    line-height: 1.5rem;
-  }
+    #ratingBox_paragrpah {
+      font-size: 1rem;
+      margin-top: 1rem;
+      line-height: 1.5rem;
+    }
 
-  #ratingBox_ratings {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    .ratingBox_ratings_numbers {
-      @include circle(50%);
-      cursor: pointer;
-      text-align: center;
-      line-height: 3.5rem;
-      margin: 0.5rem;
-      width: 3.5rem;
-      height: 3.5rem;
+    #ratingBox_ratings {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      .ratingBox_ratings_numbers {
+        @include circle(50%);
+        cursor: pointer;
+        text-align: center;
+        line-height: 3.5rem;
+        margin: 0.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
 
-      &:hover {
-        background-color: $rating_hover;
+        &:hover {
+          background-color: $rating_hover;
+        }
+        &:active {
+          background-color: $rating_active;
+        }
       }
+    }
+
+    #ratingBox_submitRating {
+      cursor: pointer;
+      border-radius: 2rem;
+      height: 2.5rem;
+      width: 23.25rem;
+      margin-top: 2rem;
+
+      color: white;
+      background-color: $button_background;
+
+      letter-spacing: 0.25rem;
+      text-transform: uppercase;
+
       &:active {
-        background-color: $rating_active;
+        color: $button_background;
+        background-color: white;
       }
     }
   }
 
-  #ratingBox_submitRating {
-    cursor: pointer;
-    border-radius: 2rem;
-    height: 2.5rem;
-    width: 23.25rem;
-    margin-top: 2rem;
+  #thankYouState {
+    svg {
+      overflow: visible;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-    color: white;
-    background-color: $button_background;
-
-    letter-spacing: 0.25rem;
-    text-transform: uppercase;
-
-    &:active {
+    #ratingBox_confrimMssg {
+      @include circle(2rem);
       color: $button_background;
-      background-color: white;
+      padding: 0.5rem;
+      text-align: center;
+      width: 12rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #ratingBox_heading--thankYouState {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      text-align: center;
+      color: white;
+    }
+
+    #ratingBox_paragraph--thankYouState {
+      font-size: 1rem;
+      margin-top: 1rem;
+      line-height: 1.5rem;
+      text-align: center;
     }
   }
 }
