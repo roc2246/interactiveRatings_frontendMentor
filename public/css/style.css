@@ -36,9 +36,13 @@ html {
       border-radius: 50%;
       text-align: center;
       line-height: 3.5rem;
-      margin: .5rem;
+      margin: 0.5rem;
       width: 3.5rem;
       height: 3.5rem; }
+      #ratingBox #ratingBox_ratings .ratingBox_ratings_numbers:hover {
+        background-color: #7c8798; }
+      #ratingBox #ratingBox_ratings .ratingBox_ratings_numbers:active {
+        background-color: #fc7613; }
   #ratingBox #ratingBox_submitRating {
     border-radius: 2rem;
     height: 2.5rem;
@@ -47,6 +51,9 @@ html {
     background-color: #fc7613;
     letter-spacing: 0.25rem;
     text-transform: uppercase; }
+    #ratingBox #ratingBox_submitRating:active {
+      color: #fc7613;
+      background-color: white; }
 
 .attribution {
   margin-top: 2rem;
