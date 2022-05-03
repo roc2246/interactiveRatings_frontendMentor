@@ -8,12 +8,13 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: auto;
   padding: 1.25rem;
   background-color: #1f2630;
   border-radius: 1rem;
-  max-width: 80vw;
-  max-height: 100vh; }
+  max-width: 24rem;
+  max-height: 40rem; }
   #ratingBox #ratingState svg {
     background-color: #262f38;
     border-radius: 4rem;
@@ -45,6 +46,8 @@ html {
         background-color: #7c8798; }
       #ratingBox #ratingState #ratingBox_ratings .ratingBox_ratings_numbers:active {
         background-color: #fc7613; }
+    #ratingBox #ratingState #ratingBox_ratings #ratingBox_ratings_numbers--chosen {
+      background-color: #7c8798; }
   #ratingBox #ratingState #ratingBox_submitRating {
     cursor: pointer;
     border-radius: 2rem;
