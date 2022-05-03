@@ -22,14 +22,15 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   margin: auto;
   padding: 1.25rem;
 
   background-color: $ratingBox_backbround;
   border-radius: 1rem;
-  max-width: 80vw;
-  max-height: 100vh;
+  max-width: 24rem;
+  max-height: 40rem;
 
   #ratingState {
     svg {
@@ -70,6 +71,9 @@ html {
         &:active {
           background-color: $rating_active;
         }
+      }
+      #ratingBox_ratings_numbers--chosen {
+        background-color: $rating_hover
       }
     }
 
