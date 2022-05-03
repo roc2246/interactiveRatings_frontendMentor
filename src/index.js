@@ -12,7 +12,7 @@ const publicDirectoryPath = path.join(__dirname, '../public')
 app.use(express.static(publicDirectoryPath))
 
 app.get('', (req, res) => {
-    res.render('index', {
+    res.render('index.html', {
         title: 'Weather',
         name: 'Riley Childs'
     })
