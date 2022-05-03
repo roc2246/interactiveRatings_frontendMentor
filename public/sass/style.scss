@@ -1,5 +1,5 @@
 $screen_background: #141519;
-$ratingBox_backbround: #1f2630;
+$ratingBox_background: #1f2630;
 $circleIcon_background: #262f38;
 $button_background: #fc7613;
 
@@ -29,7 +29,7 @@ html {
   margin-top: 20vh;
   padding: 2rem;
 
-  background-color: $ratingBox_backbround;
+  background-color: $ratingBox_background;
   border-radius: 1rem;
   max-width: 24rem;
   max-height: 40rem;
@@ -75,7 +75,7 @@ html {
         }
       }
       #ratingBox_ratings_numbers--chosen {
-        background-color: $rating_hover
+        background-color: $rating_hover;
       }
     }
 
@@ -139,4 +139,36 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+@media only screen and (max-width: 390px) {
+  #ratingBox {
+    transform: scale(0.925);
+    padding: 1rem;
+    #ratingState {
+      transform: scale(0.925);
+      #ratingBox_paragrpah {
+        line-height: 2rem;
+      }
+      .ratingBox_ratings_numbers {
+        &:active {
+          background-color: $rating_active;
+        }
+      }
+    }
+    #thankYouState {
+      transform: scale(0.925);
+      #ratingBox_paragraph--thankYouState {
+        line-height: 2rem;
+      }
+    }
+  }
+
+  .attribution {
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
