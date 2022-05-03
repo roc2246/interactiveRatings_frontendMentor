@@ -102,8 +102,6 @@ html {
       transform: scale(0.925); }
       #ratingBox #ratingState #ratingBox_paragrpah {
         line-height: 2rem; }
-      #ratingBox #ratingState .ratingBox_ratings_numbers:active {
-        background-color: #fc7613; }
     #ratingBox #thankYouState {
       transform: scale(0.925); }
       #ratingBox #thankYouState #ratingBox_paragraph--thankYouState {
@@ -111,5 +109,5 @@ html {
   .attribution {
     margin-top: 2rem;
     display: flex;
-    flex-direction: row;
-    justify-content: center; } }
+    flex-direction: column;
+    align-items: center; } }
